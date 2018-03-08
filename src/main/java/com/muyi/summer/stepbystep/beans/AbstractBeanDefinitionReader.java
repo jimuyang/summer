@@ -1,0 +1,31 @@
+package com.muyi.summer.stepbystep.beans;
+
+import com.muyi.summer.stepbystep.beans.io.ResourceLoader;
+
+import java.util.HashMap;
+import java.util.Map;
+
+/**
+ * @Author: muyi-corp
+ * @Date: Created in 14:13 2018/1/31
+ * @Description:
+ */
+public abstract class AbstractBeanDefinitionReader implements BeanDefinitionReader {
+
+    private Map<String, BeanDefinition> registry;
+
+    private ResourceLoader resourceLoader;
+
+    protected AbstractBeanDefinitionReader(ResourceLoader resourceLoader){
+        this.registry = new HashMap<>();
+        this.resourceLoader = resourceLoader;
+    }
+
+    public Map<String, BeanDefinition> getRegistry() {
+        return registry;
+    }
+
+    public ResourceLoader getResourceLoader() {
+        return resourceLoader;
+    }
+}
