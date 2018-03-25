@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans>
 
-    <bean name="helloService" class="com.muyi.summer.stepbystep.service.impl.HelloServiceImpl">
+    <bean id="helloService" class="com.muyi.summer.stepbystep.service.impl.HelloServiceImpl">
         <property name="text" value="Hello xml !"></property>
         <property name="outputService" ref="outputService"></property>
     </bean>
 
 
-    <bean name="outputService" class="com.muyi.summer.stepbystep.service.impl.OutputServiceImpl">
+    <bean id="outputService" class="com.muyi.summer.stepbystep.service.impl.OutputServiceImpl">
         <property name="helloService" ref="helloService"></property>
     </bean>
 
-    <bean name="beanInitializeLogger" class="com.muyi.summer.stepbystep.BeanInitializeLogger">
+    <bean id="beanInitializeLogger" class="com.muyi.summer.stepbystep.BeanInitializeLogger">
     </bean>
 </beans>

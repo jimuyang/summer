@@ -14,7 +14,7 @@ public abstract class AbstractApplicationContext implements ApplicationContext {
 
     protected AbstractBeanFactory beanFactory;
 
-    public AbstractApplicationContext(AbstractBeanFactory beanFactory){
+    public AbstractApplicationContext(AbstractBeanFactory beanFactory) throws Exception{
         this.beanFactory = beanFactory;
     }
 
@@ -35,7 +35,7 @@ public abstract class AbstractApplicationContext implements ApplicationContext {
     }
 
     protected void onRefresh() throws Exception{
-        beanFactory.preInstantiateSingletons();
+        this.beanFactory.preInstantiateSingletons();
     }
 
 
