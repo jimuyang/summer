@@ -12,7 +12,14 @@ import java.util.concurrent.ConcurrentHashMap;
 /**
  * @Author: muyi-corp
  * @Date: Created in 19:11 2018/1/30
- * @Description:
+ * @Description: beanFactory的抽象类实现，规范了 IoC 容器的基本结构，但是把生成 Bean 的具体实现方式留给子类实现
+ */
+
+/**
+ * AbstractBeanFactory 维护一个 beanDefinitionMap 哈希表用于保存类的定义信息
+ * 获取 Bean 时，如果 Bean 已经存在于容器中，则返回之，否则则调用 doCreateBean 方法装配一个 Bean。（
+ * 所谓存在于容器中，是指容器可以通过 beanDefinitionMap 获取 BeanDefinition 进而通过其 getBean() 方法获取 Bean
+ *
  */
 public abstract class AbstractBeanFactory implements BeanFactory {
 

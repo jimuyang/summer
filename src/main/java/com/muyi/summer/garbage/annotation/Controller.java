@@ -1,4 +1,4 @@
-package com.muyi.summer.annotation;
+package com.muyi.summer.garbage.annotation;
 
 import java.lang.annotation.*;
 

@@ -44,6 +44,19 @@
             <version>1.6.11</version>
         </dependency>
 
+        <!--spring官方 用于参考和抄袭-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>5.0.4.RELEASE</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-beans</artifactId>
+            <version>5.0.4.RELEASE</version>
+        </dependency>
+
     </dependencies>
 
     <build>

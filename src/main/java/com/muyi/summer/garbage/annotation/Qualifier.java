@@ -1,16 +1,15 @@
-package com.muyi.summer.annotation;
+package com.muyi.summer.garbage.annotation;
 
 import java.lang.annotation.*;
 
 /**
  * @Author: muyi-corp
- * @Date: Created in 18:25 2018/1/26
+ * @Date: Created in 18:20 2018/1/26
  * @Description:
  */
-@Target({ElementType.TYPE})
+@Target({ElementType.FIELD})
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
-public @interface Service {
+public @interface Qualifier {
     String value() default "";
-
 }

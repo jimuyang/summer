@@ -1,4 +1,4 @@
-package com.muyi.summer.servlet;
+package com.muyi.summer.garbage.servlet;
 
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
