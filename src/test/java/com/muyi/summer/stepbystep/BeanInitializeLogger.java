@@ -7,7 +7,7 @@ import com.muyi.summer.stepbystep.beans.BeanPostProcessor;
  *
  * @Author: muyi-macpro
  * @Time: 2018/3/6 下午4:25
- * @Description:
+ * @Description: BeanPostProcessor 将会最先被初始化
  */
 public class BeanInitializeLogger implements BeanPostProcessor {
     @Override

@@ -2,6 +2,7 @@ package com.muyi.summer.stepbystep.beans.factory;
 
 import com.muyi.summer.stepbystep.beans.BeanDefinition;
 import com.muyi.summer.stepbystep.beans.BeanPostProcessor;
+import org.omg.CORBA.OBJ_ADAPTER;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -99,7 +100,7 @@ public abstract class AbstractBeanFactory implements BeanFactory {
 
     // 通过类型获得beans 没有就创建一个
     public List getBeansForType(Class type) throws Exception {
-        List beans = new ArrayList<Object>();
+        List beans = new ArrayList<>();
 
         for (String beanDefinitionName : this.beanDefinitionNames) {
             if (type.isAssignableFrom(this.beanDefinitionMap.get(beanDefinitionName).getBeanClass())) {

@@ -3,7 +3,7 @@ package com.muyi.summer.stepbystep;
 /**
  * @Author: muyi-corp
  * @Date: Created in 18:16 2018/2/1
- * @Description:
+ * @Description: 存储一个
  */
 public class BeanReference {
 

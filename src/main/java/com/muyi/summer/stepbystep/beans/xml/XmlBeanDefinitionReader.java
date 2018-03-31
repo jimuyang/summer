@@ -17,7 +17,7 @@ import java.io.InputStream;
 /**
  * @Author: muyi-corp
  * @Date: Created in 14:22 2018/1/31
- * @Description:
+ * @Description: 具体实现了 loadBeanDefinitions() 方法，从 XML 文件中读取类定义。
  */
 public class XmlBeanDefinitionReader extends AbstractBeanDefinitionReader {
 
